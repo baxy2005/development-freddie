@@ -1,0 +1,14 @@
+.navbar {
+    min-height: 110px;
+}
+.navbar-inverse {
+  background-color: $color-black;
+  border:none;
+}
+
+.navbar-brand {
+  text-indent: -99999px;
+  width: 370px;
+  height: 46px;
+  @include bgImage ('../images/freddie-signature.svg');
+}

@@ -1,0 +1,17 @@
+.thumbnail {
+  padding: 0px;
+  border-radius:$base-radius;
+    img {
+      border-top-left-radius:$base-radius;
+      border-top-right-radius:$base-radius;
+      width: 100%
+    }
+    .caption {
+      text-align: center;
+      padding: 40px 55px 55px 55px;
+      h3 {
+        margin-top: 0px;
+        margin-bottom: 35px;
+      }
+    }
+}
