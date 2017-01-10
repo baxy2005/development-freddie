@@ -1,3 +1,20 @@
+// init ScrollMagic Controller
+var controller = new ScrollMagic.Controller({
+	globalSceneOptions: {
+		triggerHook: "onLeave"
+	}
+});
+
+// Scene Handler
+var scene = new ScrollMagic.Scene({
+	triggerElement: '#nav',
+})
+.setPin("#nav"); // the element we want to pin
+
+controller.addScene([
+  scene
+]);
+
 // owl carousel
 $('.main-carousel').owlCarousel({
 	animateOut: 'fadeOut',
