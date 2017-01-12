@@ -10,7 +10,14 @@
 
 .navbar-brand {
   text-indent: -99999px;
-  width: 370px;
-  height: 46px;
+  width: 372px;
+  height: 48px;
   @include bgImage ('../images/freddie-signature.svg');
+
+  &--smaller {
+    width: 356px;
+    height: 46px;
+    opacity: .5;
+    margin-bottom: 25px;
+  }
 }

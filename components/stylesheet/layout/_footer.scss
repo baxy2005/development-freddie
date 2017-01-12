@@ -1,5 +1,59 @@
 .site-footer {
   background-color: $color-black;
   min-height: 270px;
-  
+  display: flex;
+  align-items: center;
+  h3 {
+    color: $color-white;
+    font-size: 22px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  p {
+    text-align: center;
+    color: $mid-color-gray;
+    margin-bottom: 25px;
+  }
+  .footer-copyright{
+    position: absolute;
+    top: 50%;
+    transform: translateY(20%);
+    &__text {
+      text-align: left;
+      padding-left: 20px;
+      line-height: 150%;
+    }
+    a {
+      color: $mid-color-gray;
+    }
+    a:hover, a:active, a:focus  {
+      color: $color-white;
+    }
+  }
+  .icons {
+    @include flexContainer (row, center, center);
+    a:hover i, a:active i, a:focus i {
+     background-color: $mid-color-gray;
+     color: $color-black;
+    }
+    i {
+      height: 50px;
+      width: 50px;
+      border: 1px solid $mid-color-gray;
+      border-radius: 96px;
+      @include flexContainer (row, center, center);
+      margin: 0 5px;
+
+      &.fa-facebook, &.fa-envelope {
+        color: $mid-color-gray;
+      }
+      &.fa-facebook {
+        font-size: 28px;
+      }
+      &.fa-envelope {
+        font-size: 24px;
+      }
+    }
+  }
 }

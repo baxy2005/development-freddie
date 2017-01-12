@@ -23,8 +23,8 @@ background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
 }
-@mixin roundEdge ($radius){
-	border-radius: $radius;
+@mixin roundEdge ($base-radius){
+	border-radius: $base-radius;
 }
 
 // media queries
