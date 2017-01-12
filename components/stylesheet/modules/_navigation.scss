@@ -15,9 +15,13 @@
   @include bgImage ('../images/freddie-signature.svg');
 
   &--smaller {
-    width: 356px;
-    height: 46px;
+    width: 290px;
+    height: 38px;
     opacity: .5;
     margin-bottom: 25px;
+    @include tablet {
+      width: 356px;
+      height: 46px;
+    }
   }
 }
