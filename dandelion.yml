@@ -1,0 +1,16 @@
+# Required
+scheme: ftp
+host: nokazuton.com
+username: zsuberes
+password: berkovitsbranfman60
+path: public_html/varadi.tv/works/freddie/develop
+
+# Optional
+exclude:
+    - .gitignore
+    - dandelion.yml
+    - node_modules
+    - components
+    - gulpfile.js
+    - package.json
+    - bower.json
