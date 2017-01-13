@@ -1,0 +1,66 @@
+.nav-tabs {
+border: none;
+}
+
+.responsive-tabs-container .tab-pane {
+  margin-bottom: 15px;
+  @include laptop {
+    margin-bottom: 90px;
+  }
+}
+.tab-pane {
+  border-width:1px 1px 1px 1px;
+  border-style:solid solid solid solid;
+  border-color:#ddd #ddd #ddd #ddd;
+  border-radius:$base-radius;
+  min-height: auto;
+  padding: 15px;
+  text-align: center;
+    @include laptop {
+      padding: 35px;
+      min-height: 320px;
+      text-align: left !important;
+      border-radius:0px $base-radius $base-radius $base-radius;
+    }
+  h3 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  .img-rounded {
+    height: auto;
+    width: 50%;
+    margin-bottom: 30px;
+    @include laptop {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+  }
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: $color-black;
+  font-size: 18px;
+  padding: 15px 35px;
+  font-weight: 500;
+}
+.nav-tabs>li>a {
+  border-radius: $base-radius $base-radius 0 0;
+  padding: 15px 35px;
+  border: 2px solid transparent;
+  background-color: $light-color2-gray;
+  color: $mid-color-gray;
+  font-weight: 500;
+  &:hover, &:focus, &:active{
+    background-color: $light-color-gray;
+    border: 2px solid transparent;
+  }
+}
+.responsive-tabs-container .accordion-link {
+  border-radius: $base-radius;
+  margin-bottom: 5px;
+}
+#tab-facebook {
+  min-height: 320px;
+  margin-bottom: 30px;
+}

@@ -37,7 +37,7 @@ gulp.task('watch', function() {
 
 // Uglify Plugins
 gulp.task('uglifyPlugins', function() {
-  return gulp.src(['components/libs/jquery/dist/jquery.js','components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/owl.carousel/dist/owl.carousel.js', 'components/libs/gsap/src/uncompressed/TweenMax.js', 'components/libs/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'])
+  return gulp.src(['components/libs/jquery/dist/jquery.js','components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/owl.carousel/dist/owl.carousel.js', 'components/libs/gsap/src/uncompressed/TweenMax.js', 'components/libs/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js' , 'node_modules/bootstrap-responsive-tabs/dist/js/jquery.bootstrap-responsive-tabs.min.js'])
 /*    .pipe(rename({
       suffix: ".min",
       extname: ".js"
@@ -49,7 +49,7 @@ gulp.task('uglifyPlugins', function() {
 
 // Minify Plugins CSS files
 gulp.task('minifyPlugins', function() {
-  return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css', 'components/libs/owl.carousel/dist/assets/owl.carousel.css', 'components/libs/font-awesome/css/font-awesome.css' ])
+  return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css', 'components/libs/owl.carousel/dist/assets/owl.carousel.css', 'components/libs/font-awesome/css/font-awesome.css' , 'node_modules/bootstrap-responsive-tabs/dist/css/bootstrap-responsive-tabs.css' ])
 /*    .pipe(rename({
       suffix: ".min",
       extname: ".css"

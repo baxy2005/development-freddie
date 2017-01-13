@@ -3,6 +3,10 @@
 .thumbnail {
   padding: 0px;
   border-radius: $base-radius;
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 90px;
+  }
   .fa {
     font-size: 20px;
     color: $light-color-gray;
@@ -21,4 +25,7 @@
         margin-bottom: 35px;
       }
     }
+}
+.col-md-4:last-of-type {
+  margin-bottom: 30px;
 }
