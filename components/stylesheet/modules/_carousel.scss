@@ -1,0 +1,40 @@
+.owl-carousel {
+  &__data {
+    @include flexContainer (column, center, center);
+    margin-bottom: 30px;
+    @include  tablet{
+      margin-bottom: 80px;
+    }
+    p {
+      color: $color-white;
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 5;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      br {
+        display: none
+      }
+      @include tablet {
+        font-size: 22px;
+        line-height: 38px;
+        br {
+          display: inline-block;
+        }
+
+      }
+    }
+    strong {
+      font-family: $font-secondary-bold;
+    }
+  }
+  &__signo {
+    margin-bottom: 5px;
+      @include tablet {
+      margin-bottom: 23px;
+
+    }
+  }
+}
