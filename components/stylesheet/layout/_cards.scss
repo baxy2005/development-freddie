@@ -4,7 +4,7 @@
   padding: 0px;
   border-radius: $base-radius;
   margin-bottom: 15px;
-  transition: transform .3s ease-out;
+  transition: transform .6s ease-out;
   @include laptop {
     margin-bottom: 0px;
   }
@@ -63,7 +63,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
   background: $color-white;
   z-index: 4;
   opacity: 0;
-  transition: opacity .3s ease-out;
+  transition: opacity .6s ease-out;
   display: block;
 
 }

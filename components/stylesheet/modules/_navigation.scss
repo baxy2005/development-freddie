@@ -10,6 +10,26 @@
 .navbar-inverse {
   background-color: $color-black;
   border:none;
+  display: block;
+  @include tablet {
+    @include flexContainer (row, center, center)
+
+  }
+}
+.navbar-nav>li>a {
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  //transition: all .3s ease-out;
+  &.active, &:hover {
+    color: $color-white;
+    border-bottom: 3px solid $color-white;
+  }
+}
+.navbar-nav>li{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .navbar-brand {
@@ -46,7 +66,7 @@
       width: 700px;
       height: 90px;
       background-position: center;
-      margin-left: 70px;
+      margin-left: 150px;
     }
   }
 

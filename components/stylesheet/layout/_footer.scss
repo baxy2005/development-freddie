@@ -98,6 +98,7 @@
       width: 50px;
       border: 1px solid $mid-color-gray;
       border-radius: 96px;
+      transition: background-color .3s ease-out;
       @include flexContainer (row, center, center);
       margin: 0 5px;
 

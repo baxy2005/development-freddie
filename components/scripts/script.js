@@ -1,3 +1,14 @@
+
+$(document).ready(function(){
+
+
+$("#loader").fadeOut("slow");
+	var speedOpacity = 2000;
+	$('body').animate({
+		opacity: 1
+	}, speedOpacity, function() {});
+
+
 // init ScrollMagic Controller
 var controller = new ScrollMagic.Controller({
 	globalSceneOptions: {
@@ -63,4 +74,7 @@ $(window).resize(function() {
 	$('#thumnail-three').hover(function () {
 		$('#thumnail-one .overlay, #thumnail-two .overlay').toggleClass('overlay-show')
 		$('#thumnail-one, #thumnail-two').toggleClass('thumbnail--border-fade')
+	});
+
+
 	});
