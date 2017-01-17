@@ -47,3 +47,20 @@ $(window).resize(function() {
   var wheight = $(window).height(); //get height of the window
   $('.fullheight').css('height', wheight);
 }) //on resize
+
+//cards hover effect
+
+	$('#thumnail-one').hover(function () {
+	  $('#thumnail-two .overlay, #thumnail-three .overlay').toggleClass('overlay-show')
+		$('#thumnail-two, #thumnail-three').toggleClass('thumbnail--border-fade')
+	});
+
+	$('#thumnail-two').hover(function () {
+		$('#thumnail-one .overlay, #thumnail-three .overlay').toggleClass('overlay-show')
+		$('#thumnail-one, #thumnail-three').toggleClass('thumbnail--border-fade')
+	});
+
+	$('#thumnail-three').hover(function () {
+		$('#thumnail-one .overlay, #thumnail-two .overlay').toggleClass('overlay-show')
+		$('#thumnail-one, #thumnail-two').toggleClass('thumbnail--border-fade')
+	});

@@ -2,12 +2,12 @@
 border: none;
 }
 
-.responsive-tabs-container .tab-pane {
+/*.responsive-tabs-container .tab-pane {
   margin-bottom: 15px;
   @include laptop {
     margin-bottom: 90px;
   }
-}
+}*/
 .tab-pane {
   border-width:1px 1px 1px 1px;
   border-style:solid solid solid solid;
@@ -62,5 +62,8 @@ border: none;
 }
 #tab-facebook {
   min-height: 320px;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
+}
+.responsive-tabs-container .tab-pane {
+    margin-bottom: 0;
 }

@@ -104,3 +104,9 @@ p {
 		@include flexContainer(row, center, center);
 	}
 }
+.margin-bottom {
+	margin-bottom: 30px;
+	@include tablet {
+		margin-bottom: 90px;
+	}
+}
