@@ -11,7 +11,10 @@
   .fa {
     font-size: 20px;
     color: $light-color-gray;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
     img {
       border-top-left-radius:$base-radius;
@@ -20,13 +23,22 @@
     }
     .caption {
       text-align: center;
-      padding: 40px 0px 55px 0px;
+      padding: 20px 0px 20px 0px;
+      @include tablet {
+        padding: 40px 0px 55px 0px;
+      }
       h3 {
         margin-top: 0px;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
+        @include tablet {
+          margin-bottom: 35px;
+        }
       }
       p {
-        padding: 0 55px;
+        padding: 0 15px;
+        @include tablet {
+          padding: 0 55px;
+        }
       }
       p:last-child {
         margin-bottom: 0px

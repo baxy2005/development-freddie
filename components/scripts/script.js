@@ -44,7 +44,6 @@ $('.main-carousel .item img').each(function() {
 });
 
 
-
 var topoffset = 90;
 
 var isTouch = 'ontouchstart' in document.documentElement;
@@ -76,5 +75,9 @@ $(window).resize(function() {
 		$('#thumnail-one, #thumnail-two').toggleClass('thumbnail--border-fade')
 	});
 
+// hamburger icon
+$('.navbar-toggle').click(function () {
+	$(this).toggleClass('active')
+});
 
 	});
