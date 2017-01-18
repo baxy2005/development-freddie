@@ -2,11 +2,11 @@
 $(document).ready(function(){
 
 
-$("#loader").fadeOut("slow");
-	var speedOpacity = 2000;
-	$('body').animate({
-		opacity: 1
-	}, speedOpacity, function() {});
+// $("#loader").fadeOut("slow");
+// 	var speedOpacity = 2000;
+// 	$('body').animate({
+// 		opacity: 1
+// 	}, speedOpacity, function() {});
 
 
 // init ScrollMagic Controller
