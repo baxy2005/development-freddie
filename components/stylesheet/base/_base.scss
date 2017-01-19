@@ -107,7 +107,7 @@ a:hover, a:active, a:focus {
 	}
 
 }
-h3 {
+h3, h1,h2 {
 	margin-top: 0px;
 	text-transform: uppercase;
 	font-family: $font-secondary-bold;
@@ -128,4 +128,67 @@ p {
 	@include tablet {
 		margin-bottom: 90px;
 	}
+}
+
+::-moz-selection { /* Code for Firefox */
+		color: $color-white;
+		background: $color-black;
+}
+
+::selection {
+    color: $color-white;
+    background: $color-black;
+}
+
+/*-------------------------------------------
+main content formating
+-------------------------------------------*/
+
+.main-content {
+h1 {
+	font-size: 38px;
+	margin-bottom: 55px;
+	color: $color-black;
+	&:first-child {
+		margin-top: 60px;
+	}
+}
+h2 {
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: capitalize;
+	border-bottom: 5px solid $light-color2-gray;
+	display: inline-block;;
+	padding-bottom: 4px;
+	margin-bottom: 35px;
+	color: $text-color-gray;
+}
+h3 {
+
+}
+.lead {
+	font-size: 28px;
+	line-height: 36px;
+	margin-bottom: 55px;
+}
+p {
+line-height: 28px;
+margin: 0 0 25px;
+}
+p:last-child {
+margin: 0 0 65px;
+}
+a {
+	color: $dark-color-gray;
+	font-weight: bold;
+}
+.side-pix {
+	float: right;
+	border-radius: $base-radius;
+	margin-bottom: 15px;
+	&:first-child {
+		margin-top: 78px;
+	}
+}
+
 }
