@@ -80,4 +80,37 @@ $('.navbar-toggle').click(function () {
 	$(this).toggleClass('active')
 });
 
+// function tabsInter () {
+//
+// if ($(document).width() > 768) {
+// 	$('.facebook-tab .responsive-tabs-container').remove();
+// 	$('.responsive-tabs li:nth-of-type(2)').after('<li><a href="#profile5">hello</a></li>')
+// 	$('.tab-content .tab-pane:nth-of-type(2)').after('<div class="tab-pane" id="profile5"> adsfd</div>')
+// 	$('.tab-content .tab-pane:nth-of-type(3)').before('<a href="#profile5" class="accordion-link">hello</a>')
+// }
+//
+//
+// $('.responsive-tabs li:nth-of-type(3)').click(function() {
+// 	$(this).addClass('active')
+// 	$('.responsive-tabs li:nth-of-type(2), .responsive-tabs li:nth-of-type(1)').removeClass('active')
+// 	$('.tab-content .tab-pane:nth-of-type(3)').addClass('active')
+// 	$('.tab-content .tab-pane:nth-of-type(2), .tab-content .tab-pane:nth-of-type(1)').removeClass('active')
+// });
+// 	$('.responsive-tabs li:nth-of-type(2), .responsive-tabs li:nth-of-type(1)').click(function(){
+// 	$('.tab-content .tab-pane:nth-of-type(3)').removeClass('active')
+//
+// });
+//
+// }
+// tabsInter ();
+// 	// tabs integration on mobile screen
+//
+//
+// 	$(window).resize(function() {
+// });
+//
+//
+// $(window).trigger('resize');
+
+
 	});
