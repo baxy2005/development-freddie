@@ -7,6 +7,7 @@
 
 $(document).ready(function(){
 
+$('.spinner-image img').css('opacity', '1')
 
 $(window).on('load', function() {
 	function hidePreloader() {
