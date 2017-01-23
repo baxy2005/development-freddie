@@ -1,13 +1,21 @@
+//
+// var overlay = document.getElementById("overlay");
+//
+// window.addEventListener('load', function(){
+//   overlay.style.display = 'none';
+// });
 
 $(document).ready(function(){
 
 
-$("#loader").fadeOut("slow");
-	var speedOpacity = 2000;
-	$('body').animate({
-		opacity: 1
-	}, speedOpacity, function() {});
-
+$(window).on('load', function() {
+	function hidePreloader() {
+		var preloader = $(".spinner-wrapper");
+		preloader.fadeOut(2000);
+	}
+	hidePreloader();
+});
+	});
 
 // init ScrollMagic Controller
 var controller = new ScrollMagic.Controller({
@@ -79,5 +87,3 @@ $(window).resize(function() {
 $('.navbar-toggle').click(function () {
 	$(this).toggleClass('active')
 });
-
-	});
