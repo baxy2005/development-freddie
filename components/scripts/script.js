@@ -1,12 +1,21 @@
+//
+// var overlay = document.getElementById("overlay");
+//
+// window.addEventListener('load', function(){
+//   overlay.style.display = 'none';
+// });
 
 $(document).ready(function(){
 
+$('.spinner-image img').css('opacity', '1')
 
-$("#loader").fadeOut("slow");
-	var speedOpacity = 2000;
-	$('body').animate({
-		opacity: 1
-	}, speedOpacity, function() {});
+$(window).on('load', function() {
+	function hidePreloader() {
+		var preloader = $(".spinner-wrapper");
+		preloader.fadeOut(2000);
+	}
+	hidePreloader();
+});
 
 
 // init ScrollMagic Controller
@@ -80,6 +89,14 @@ $('.navbar-toggle').click(function () {
 	$(this).toggleClass('active')
 });
 
+// responsive-tabs
+
+$('.responsive-tabs').responsiveTabs({
+	accordionOn: ['xs', 'sm'] // xs, sm, md, lg
+});
+
+	});
+
 // function tabsInter () {
 //
 // if ($(document).width() > 768) {
@@ -111,6 +128,3 @@ $('.navbar-toggle').click(function () {
 //
 //
 // $(window).trigger('resize');
-
-
-	});

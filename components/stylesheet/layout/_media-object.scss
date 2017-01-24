@@ -1,0 +1,32 @@
+.media {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px $light-color-gray;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+  &-heading {
+    font-size: 24px;
+    margin-bottom: 0px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &-left {
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  &-left, &-body {
+    display: block;
+    @include tablet {
+      display: table-cell;
+    }
+  }
+  &-body {
+    width: 100%;
+    @include tablet {
+      width: 1000px;
+    }
+  }
+}

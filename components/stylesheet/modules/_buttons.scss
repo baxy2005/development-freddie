@@ -10,7 +10,7 @@
 .btn-default {
 	background-color: $color-black;
 	@include roundEdge (4px);
-	color: $color-white;
+	color: $color-white !important;
 
 	&--btn-invesrse {
 		background-color: $color-white;
